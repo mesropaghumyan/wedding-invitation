@@ -15,7 +15,7 @@ html
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css", integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==", crossorigin="anonymous", referrerpolicy="no-referrer")
     script(src="https://cdn.tailwindcss.com")
   body
-    nav(id="navbar" class="relative md:fixed top-0 w-full bg-transparent text-white max-md:bg-black")
+    nav(id="navbar" class="hover:bg-black fixed top-0 w-full bg-transparent text-white max-md:bg-black")
       div(class="flex items-center justify-between w-full")
         h1(class="text-3xl mx-10 py-4") M & T
         <!-- Mobile toggle button -->
@@ -25,20 +25,12 @@ html
         <!-- Desktop navigation -->
         ul(class="hidden md:flex max-md:hidden items-center gap-x-10 mx-10")
           li
-            a(href="#our-history") Notre histoire
-          li
-            a(href="#faq") FAQ
-          li
             a(href="#contact")
-              button(class="border-solid border-2 border-black px-2 py-5 bg-black text-white uppercase") Confirmez votre venue
+              button(class="px-2 py-5 text-white uppercase") Confirmez votre venue
 
       <!-- Mobile menu (hidden by default) -->
-      div(id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full bg-black text-white transform -translate-y-full transition-transform duration-300 ease-in-out")
+      div(id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full bg-black text-white transform -translate-y-full transition-transform duration-300 ease-in-out")
         ul(class="flex flex-col items-center gap-y-4 py-16")
-          li
-            a(href="#our-history", onclick="setMenu()") Notre histoire
-          li
-            a(href="#faq", onclick="setMenu()") FAQ
           li
             a(href="#contact", onclick="setMenu()")
               button(class="border-solid border-2 border-white p-2 text-white uppercase") Confirmez votre venue
