@@ -1,13 +1,75 @@
 extends layout
 
 block content
-  div#header.flex.flex-col.items-center.justify-center.h-lvh.gap-y-10(style="background-image: url('images/tom-et-manon-qui-marchent.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
-    p.text-xl.font-bold Nous allons nous marier !
-    h2.text-6xl Manon et Tom
-    p.text-xl.font-bold 14.10.24
-  div
+  div#header.flex.flex-col.items-center.justify-center.h-lvh.gap-y-10.text-white(style="background-image: url('images/tom-et-manon-qui-marchent.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+    p.text-5xl.font-bold Nous allons nous marier !
+    h2.text-9xl Manon et Tom
+    p.text-5xl.font-bold 14.10.24
     <!-- ceremony -->
-    div(class="h-lvh bg-gray-50")
-  div(id="#our-history")
+  div(class="flex gap-x-40 h-dvh justify-center items-center bg-gray-200 max-xl:flex-col max-xl:gap-y-10")
+    h1(class="hidden text-6xl max-xl:block") Cérémonie
+    img(src="images/bisou.jpg" class="max-xl:max-h-[30em] max-h-[50em]")
+    div(class="flex flex-col items-center text-center justify-center gap-y-6")
+      h1(class="text-8xl max-xl:hidden") Cérémonie
+      h2(class="text-4xl") 16h00
+      ul
+        li(class="text-2xl") Chateau Grange Cochard
+        li(class="text-2xl") 1562 Voie Romaine
+        li(class="text-2xl") 69910 Villié-Morgon
+      a(class="text-xl" href="https://www.google.com/maps/dir//Grange+Cochard,+1562+Voie+Romaine,+69910+Villi%C3%A9-Morgon/@46.1533039,4.581388,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f37e89eda30393:0x788ef4fd85ea1792!2m2!1d4.6637886!2d46.1533335?entry=ttu") Carte
+  div(class="flex flex-row-reverse gap-x-40 h-dvh justify-center items-center bg-gray-200 max-xl:flex-col max-xl:gap-y-10")
+    h1(class="hidden text-6xl max-xl:block") Vin d'honneur
+    img(src="images/bisou.jpg" class="max-xl:max-h-[30em] max-h-[50em]")
+    div(class="flex flex-col items-center text-center justify-center gap-y-6")
+      h1(class="text-8xl max-xl:hidden") Vin d'honneur
+      h2(class="text-4xl") 16h00
+      ul
+        li(class="text-2xl") Chateau Grange Cochard
+        li(class="text-2xl") 1562 Voie Romaine
+        li(class="text-2xl") 69910 Villié-Morgon
+      a(class="text-xl" href="https://www.google.com/maps/dir//Grange+Cochard,+1562+Voie+Romaine,+69910+Villi%C3%A9-Morgon/@46.1533039,4.581388,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f37e89eda30393:0x788ef4fd85ea1792!2m2!1d4.6637886!2d46.1533335?entry=ttu") Carte
+  div(class="flex gap-x-40 h-dvh justify-center items-center bg-gray-200 max-xl:flex-col max-xl:gap-y-10")
+    h1(class="hidden text-6xl max-xl:block") Repas
+    img(src="images/bisou.jpg" class="max-xl:max-h-[30em] max-h-[50em]")
+    div(class="flex flex-col items-center text-center justify-center gap-y-6")
+      h1(class="text-8xl max-xl:hidden") Repas
+      h2(class="text-4xl") 16h00
+      ul
+        li(class="text-2xl") Chateau Grange Cochard
+        li(class="text-2xl") 1562 Voie Romaine
+        li(class="text-2xl") 69910 Villié-Morgon
+      a(class="text-xl" href="https://www.google.com/maps/dir//Grange+Cochard,+1562+Voie+Romaine,+69910+Villi%C3%A9-Morgon/@46.1533039,4.581388,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f37e89eda30393:0x788ef4fd85ea1792!2m2!1d4.6637886!2d46.1533335?entry=ttu") Carte
+  div(class="flex flex-row-reverse gap-x-40 h-dvh justify-center items-center bg-gray-200 max-xl:flex-col max-xl:gap-y-10")
+    h1(class="hidden text-6xl max-xl:block") Soirée
+    img(src="images/bisou.jpg" class="max-xl:max-h-[30em] max-h-[50em]")
+    div(class="flex flex-col items-center text-center justify-center gap-y-6")
+      h1(class="text-8xl max-xl:hidden") Soirée
+      h2(class="text-4xl") 16h00
+      ul
+        li(class="text-2xl") Chateau Grange Cochard
+        li(class="text-2xl") 1562 Voie Romaine
+        li(class="text-2xl") 69910 Villié-Morgon
+      a(class="text-xl" href="https://www.google.com/maps/dir//Grange+Cochard,+1562+Voie+Romaine,+69910+Villi%C3%A9-Morgon/@46.1533039,4.581388,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f37e89eda30393:0x788ef4fd85ea1792!2m2!1d4.6637886!2d46.1533335?entry=ttu") Carte
+  div(class="flex gap-x-40 h-dvh justify-center items-center bg-gray-200 max-xl:flex-col max-xl:gap-y-10")
+    h1(class="hidden text-6xl max-xl:block") Brunch
+    img(src="images/bisou.jpg" class="max-xl:max-h-[30em] max-h-[50em]")
+    div(class="flex flex-col items-center text-center justify-center gap-y-6")
+      h1(class="text-8xl max-xl:hidden") Brunch
+      h2(class="text-4xl") 16h00
+      ul
+        li(class="text-2xl") Chateau Grange Cochard
+        li(class="text-2xl") 1562 Voie Romaine
+        li(class="text-2xl") 69910 Villié-Morgon
+      a(class="text-xl" href="https://www.google.com/maps/dir//Grange+Cochard,+1562+Voie+Romaine,+69910+Villi%C3%A9-Morgon/@46.1533039,4.581388,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f37e89eda30393:0x788ef4fd85ea1792!2m2!1d4.6637886!2d46.1533335?entry=ttu") Carte
+  div(id="#contact", class="h-dvh")
+    h1(class="text-6xl") Nous espérons vous compter parmi nous !
+    form(action='/', method='POST')
+      p
+        | title:
+        input(type='text', name='title', value='')
+        |          year:
+        input(type='text', name='year', value='')
+        |          imdb:
+        input(type='text', name='imdb', value='')
+      input(type='submit', value='Submit')
   div(id="#faq")
-  div(id="#contact")
