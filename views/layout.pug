@@ -27,7 +27,7 @@ html
             a(href="#faq") FAQ
           li
             a(href="#contact")
-              button(class="border-solid border-2 border-black p-2 bg-black text-white uppercase") Confirmez votre venue
+              button(class="border-solid border-2 border-black px-2 py-5 bg-black text-white uppercase") Confirmez votre venue
 
       <!-- Mobile menu (hidden by default) -->
       div(id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full bg-black text-white transform -translate-y-full transition-transform duration-300 ease-in-out")
@@ -53,19 +53,6 @@ html
         navbar.classList.remove('scrolled');
       }
     });
-
-    // document.getElementById('mobile-menu-btn').addEventListener('click', function () {
-    //   document.getElementById('mobile-menu').classList.toggle('-translate-y-full');
-    // });
-    //
-    // document.addEventListener('click', function (event) {
-    //   const mobileMenu = document.getElementById('mobile-menu');
-    //   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    //
-    //   if (!mobileMenu.contains(event.target) && event.target !== mobileMenuBtn) {
-    //     mobileMenu.classList.add('-translate-y-full');
-    //   }
-    // });
 
     function setMenu() {
       openMenu = !openMenu;
