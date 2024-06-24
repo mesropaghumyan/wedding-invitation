@@ -1,12 +1,11 @@
 doctype html
 html
+
   head
-    title= title
+    title="Mariage de Manon et Tom"
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js')
-
     link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap", rel="stylesheet")
     link(rel="preconnect", href="https://fonts.googleapis.com")
@@ -14,34 +13,28 @@ html
     link(href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Parisienne&display=swap", rel="stylesheet")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css", integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==", crossorigin="anonymous", referrerpolicy="no-referrer")
     script(src="https://cdn.tailwindcss.com")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js')
+
   body
-    nav(id="navbar" class="hover:bg-black fixed top-0 w-full bg-transparent text-white max-md:bg-black")
-      div(class="flex items-center justify-between w-full")
-        h1(class="text-3xl mx-10 py-4") M & T
-        <!-- Mobile toggle button -->
-        button(onclick="setMenu()" id="mobile-menu-btn" class="md:hidden z-40 block px-4 py-2 z-100 text-white")
-          i(onclick="setMenu()" class="fas fa-bars text-2xl")
 
-        <!-- Desktop navigation -->
-        ul(class="hidden md:flex max-md:hidden items-center gap-x-10 mx-10")
-          li
-            a(href="#contact")
-              button(class="px-2 py-5 text-white uppercase") Confirmez votre venue
-
-      <!-- Mobile menu (hidden by default) -->
-      div(id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full bg-black text-white transform -translate-y-full transition-transform duration-300 ease-in-out")
-        ul(class="flex flex-col items-center gap-y-4 py-16")
-          li
-            a(href="#contact", onclick="setMenu()")
-              button(class="border-solid border-2 border-white p-2 text-white uppercase") Confirmez votre venue
+    include nav
 
     block content
 
   script.
+    /**
+    * Init AOS animations
+    */
     AOS.init();
 
-    let openMenu = true;
+    /**
+    * Mobile menu open/close status, if menu open var equal true else false
+    */
+    let openMenu = false; // init to true
 
+    /**
+    * This event allow change navbar style when user scroll
+    */
     window.addEventListener('scroll', function () {
       const navbar = document.getElementById('navbar');
       if (window.scrollY > 0) {
@@ -51,13 +44,17 @@ html
       }
     });
 
+    /**
+     * This function allow to open/close mobile menu
+     */
     function setMenu() {
       openMenu = !openMenu;
 
-      if (openMenu) {
-        mobileMenu.classList.add('-translate-y-full');
+      if (!openMenu) {
+        document.getElementById('mobile-menu').classList.toggle('-translate-y-full');
+        openMenu = false;
       }
       else {
-        document.getElementById('mobile-menu').classList.toggle('-translate-y-full');
+        openMenu = true;
       }
     }

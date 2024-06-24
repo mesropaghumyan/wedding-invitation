@@ -1,0 +1,41 @@
+block contact
+
+    section(id="contact" class="form-section flex flex-col items-center h-dvh py-20 gap-y-10 max-xl:mx-10")
+        h1(class="text-6xl text-center") Mariage de Manon & Tom
+
+        form(class="flex flex-col max-xl:min-w-full min-w-[70em] gap-y-10" role="form" method="post" action="/contact")
+            div(class="form-group flex w-full gap-x-20 max-xl:gap-x-0")
+                div(class="form-field flex flex-col gap-y-1.5 w-1/2")
+                    label(class="text-2xl" for="firstName") Prénom
+                    input(id="firstName" name="firstName" type="text" class="input-field h-16 text-2xl pl-5 bg-gray-100")
+                div(class="form-field flex flex-col gap-y-1.5 w-1/2")
+                    label(class="text-2xl" for="lastName") Nom
+                    input(id="lastName" name="lastName" type="text" class="input-field h-16 text-2xl pl-5 bg-gray-100")
+
+            div(class="form-group flex flex-col gap-y-1.5")
+                label(class="text-2xl" for="email") Email
+                input(id="email" name="email" type="email" class="input-field h-16 text-2xl pl-5 bg-gray-100")
+
+            div(class="form-group flex flex-col gap-y-1.5")
+                label(class="text-2xl") Serez-vous présent(e) ?
+
+                div(class="form-radio-group")
+
+                    div(class="form-radio-field flex gap-x-5")
+                        input(type="radio" id="yes" name="isPresent" value="Oui" checked)
+                        label(class="text-2xl" for="yes") Oui
+
+                    div(class="form-radio-field flex gap-x-5")
+                        input(type="radio" id="no" name="isPresent" value="Non")
+                        label(class="text-2xl" for="no") Non
+
+            div(class="form-group flex flex-col gap-y-1.5")
+                label(class="text-2xl" for="foodRestrictions") Vous avez des restrictions alimentaires à nous signaler ?
+                input(id="foodRestrictions" name="foodRestrictions" type="text" class="input-field h-16 text-2xl pl-5 bg-gray-100")
+
+            div(class="form-group flex flex-col gap-y-1.5")
+                label(class="text-2xl" for="answers") Questions ou commentaires
+                input(id="answers" name="answers" type="text" class="input-field h-16 text-2xl pl-5 bg-gray-100")
+
+            div(class="form-group flex w-full justify-center")
+                button(type="submit" class="submit-button py-5 px-10 bg-black text-white text-2xl relative overflow-hidden") Envoyer

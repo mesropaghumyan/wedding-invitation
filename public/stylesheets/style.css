@@ -1,6 +1,7 @@
 * {
     font-family: "Cormorant Garamond", serif;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 nav h1 {
