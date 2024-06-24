@@ -4,6 +4,9 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js')
+
     link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap", rel="stylesheet")
     link(rel="preconnect", href="https://fonts.googleapis.com")
@@ -43,6 +46,8 @@ html
     block content
 
   script.
+    AOS.init();
+
     let openMenu = true;
 
     window.addEventListener('scroll', function () {
