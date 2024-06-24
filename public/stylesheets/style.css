@@ -1,8 +1,17 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
 }
 
-a {
-  color: #00B7FF;
+nav h1 {
+    font-family: "Parisienne", cursive;
+}
+
+#navbar {
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+#navbar.scrolled {
+    background-color: black;
 }

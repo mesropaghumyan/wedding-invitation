@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div#header.flex.flex-col.items-center.justify-center.h-lvh.gap-y-10(style="background-image: url('images/tom-et-manon-qui-marchent.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+    p.text-xl.font-bold Nous allons nous marier !
+    h2.text-6xl Manon et Tom
+    p.text-xl.font-bold 14.10.24
+  div(id="#our-history" class="h-lvh")
+  div(id="#faq")
+  div(id="#contact")
