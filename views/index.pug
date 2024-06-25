@@ -1,14 +1,14 @@
 extends layout
 
 block content
-  div(class="text-center text-white gap-y-10 h-lvh justify-center items-center flex-col flex" data-aos="fade-up" data-aos-anchor-placement="center-bottom" style="background-image: url('/images/roses.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
-    p.text-5xl.font-bold Nous allons nous marier !
-    h2.text-9xl Manon & Tom
-    p.text-5xl.font-bold 14.10.24
+  div(class="text-center text-white gap-y-10 h-dvh max-lg:h-[50em] justify-center items-center flex-col flex" data-aos="fade-up" data-aos-anchor-placement="center-bottom" style="background-image: url('/images/roses.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+    p(class="text-5xl max-md:text-4xl font-bold") Nous allons nous marier !
+    h2(class="text-9xl max-md:text-8xl") Manon & Tom
+    p(class="text-5xl max-md:text-4xl font-bold") 14.10.24
 
-  section(class="h-dvh flex justify-center")
-    div(class="flex max-xl:flex-col max-xl:gap-y-10 justify-center gap-x-10 py-20")
-      div(data-aos="fade-right" class="flex w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/bisou.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+  section(class="h-dvh max-xl:h-[70em] flex justify-center max-lg:justify-normal")
+    div(class="flex max-xl:flex-col max-xl:gap-y-10 max-xl:w-full justify-center gap-x-10 py-20 px-10")
+      div(data-aos="fade-right" class="flex max-xl:w-full w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/bisou.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
       div(class="flex flex-col gap-y-10 text-center items-center justify-center min-w-[40em] max-xl:min-w-full")
         h1(class="text-6xl") Cérémonie laïque
         h2(class="text-5xl") 16h00
@@ -18,9 +18,9 @@ block content
           li 69910 Villié-Morgon
         a(class="text-4xl" href="/src-to-google-map-location") Carte
 
-  section(class="h-dvh flex justify-center")
-    div(class="flex flex-row-reverse max-xl:flex-col max-xl:gap-y-10 justify-center gap-x-10 py-20")
-      div(data-aos="fade-left" class="flex w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/vin.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+  section(class="h-dvh max-xl:h-[70em] flex justify-center max-lg:justify-normal")
+    div(class="flex-row-reverse flex max-xl:flex-col max-xl:gap-y-10 max-xl:w-full justify-center gap-x-10 py-20 px-10")
+      div(data-aos="fade-left" class="flex max-xl:w-full w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/vin.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
       div(class="flex flex-col gap-y-10 text-center items-center justify-center min-w-[40em] max-xl:min-w-full")
         h1(class="text-6xl") Vin d'honneur
         h2(class="text-5xl") 16h00
@@ -30,9 +30,9 @@ block content
           li 69910 Villié-Morgon
         a(class="text-4xl" href="/src-to-google-map-location") Carte
 
-  section(class="h-dvh flex justify-center")
-    div(class="flex max-xl:flex-col max-xl:gap-y-10 justify-center gap-x-10 py-20")
-      div(data-aos="fade-right" class="flex w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/repas.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+  section(class="h-dvh max-xl:h-[70em] flex justify-center max-lg:justify-normal")
+    div(class="flex max-xl:flex-col max-xl:gap-y-10 max-xl:w-full justify-center gap-x-10 py-20 px-10")
+      div(data-aos="fade-right" class="flex max-xl:w-full w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/repas.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
       div(class="flex flex-col gap-y-10 text-center items-center justify-center min-w-[40em] max-xl:min-w-full")
         h1(class="text-6xl") Repas
         h2(class="text-5xl") 16h00
@@ -42,9 +42,9 @@ block content
           li 69910 Villié-Morgon
         a(class="text-4xl" href="/src-to-google-map-location") Carte
 
-  section(class="h-dvh flex justify-center")
-    div(class="flex flex-row-reverse max-xl:flex-col max-xl:gap-y-10 justify-center gap-x-10 py-20")
-      div(data-aos="fade-left" class="flex w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/soiree.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+  section(class="h-dvh max-xl:h-[70em] flex justify-center max-lg:justify-normal")
+    div(class="flex max-xl:flex-col max-xl:gap-y-10 max-xl:w-full justify-center gap-x-10 py-20 px-10")
+      div(data-aos="fade-left" class="flex max-xl:w-full w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/soiree.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
       div(class="flex flex-col gap-y-10 text-center items-center justify-center min-w-[40em] max-xl:min-w-full")
         h1(class="text-6xl") Soirée
         h2(class="text-5xl") 16h00
@@ -54,9 +54,9 @@ block content
           li 69910 Villié-Morgon
         a(class="text-4xl" href="/src-to-google-map-location") Carte
 
-  section(class="h-dvh flex justify-center")
-    div(class="flex max-xl:flex-col max-xl:gap-y-10 justify-center gap-x-10 py-20")
-      div(data-aos="fade-right" class="flex w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/brunch.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
+  section(class="h-dvh max-xl:h-[70em] flex justify-center max-lg:justify-normal")
+    div(class="flex max-xl:flex-col max-xl:gap-y-10 max-xl:w-full justify-center gap-x-10 py-20 px-10")
+      div(data-aos="fade-right" class="flex max-xl:w-full w-[30em] max-xl:h-[100%] max-xl:m-auto" style="background-image: url('/images/brunch.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;")
       div(class="flex flex-col gap-y-10 text-center items-center justify-center min-w-[40em] max-xl:min-w-full")
         h1(class="text-6xl") Brunch
         h2(class="text-5xl") 16h00
