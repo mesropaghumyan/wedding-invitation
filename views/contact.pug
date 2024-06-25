@@ -1,14 +1,14 @@
 block contact
 
-    section(id="contact" class="form-section flex flex-col items-center h-dvh py-20 gap-y-10 max-xl:mx-10")
+    section(id="contact" class="form-section flex flex-col items-center h-dvh py-20 gap-y-10 max-xl:px-10")
         h1(class="text-6xl text-center") Mariage de Manon & Tom
 
-        form(data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="flex flex-col max-xl:min-w-full min-w-[70em] gap-y-10" role="form" method="post" action="/contact")
-            div(class="form-group flex w-full gap-x-20 max-xl:gap-x-0")
-                div(class="form-field flex flex-col gap-y-1.5 w-1/2")
+        form(data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="flex flex-col min-w-[70em] max-xl:min-w-full gap-y-10" role="form" method="post" action="/contact")
+            div(class="form-group flex w-full gap-x-20 max-xl:gap-x-10 max-xl:flex-col max-xl:gap-y-10")
+                div(class="form-field flex flex-col gap-y-1.5 w-1/2 max-xl:w-full")
                     label(class="text-2xl" for="firstName") Prénom
                     input(id="firstName" name="firstName" type="text" class="input-field h-16 text-2xl pl-5 bg-gray-100" required=true)
-                div(class="form-field flex flex-col gap-y-1.5 w-1/2")
+                div(class="form-field flex flex-col gap-y-1.5 w-1/2 max-xl:w-full")
                     label(class="text-2xl" for="lastName") Nom
                     input(id="lastName" name="lastName" type="text" class="input-field h-16 text-2xl pl-5 bg-gray-100" required=true)
 
