@@ -1,6 +1,8 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  div(class="flex flex-col items-center justify-center min-h-dvh")
+    h1(class="text-6xl")= message
+    h2(class="text-4xl")= error.status
+    a(class="mt-10" href="/")
+      button(class="submit-button py-5 px-10 bg-black hover:bg- text-white text-2xl relative overflow-hidden") Retourner à l'accueil
