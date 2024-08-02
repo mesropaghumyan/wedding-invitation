@@ -55,7 +55,7 @@ $ docker run -d -p 3000:3000 --name wedding-invitation wedding-invitation
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate. If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
 
 Steps to contribute:
-1. Fork this repository (link to your repository)
+1. Fork this repository https://github.com/mesropaghumyan/wedding-invitation
 2. Create your feature branch (git checkout -b feature/fooBar)
 3. Commit your changes (git commit -am 'Add some fooBar')
 4. Push to the branch (git push origin feature/fooBar)
