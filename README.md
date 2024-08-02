@@ -43,7 +43,7 @@ $ docker build -t wedding-invitation .
 $ docker run -d -p 3000:3000 --name wedding-invitation wedding-invitation
 `
 
-# Tech Stack / Built With
+## Tech Stack / Built With
 
 1. [Node.js](https://nodejs.org/) - A server-side JavaScript runtime environment that allows you to run JavaScript code outside of a browser, ideal for building fast and scalable network applications.
 2. [Express.js](https://expressjs.com/)  - A minimalist web framework for Node.js, designed for building web applications and APIs with a robust set of features for web and mobile applications.
