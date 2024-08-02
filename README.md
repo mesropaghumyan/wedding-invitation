@@ -71,7 +71,9 @@ You can find me here at:
 
 ## Credits
 
-README.md inspired by [SagarGaniga](https://github.com/SagarGaniga/How-to-Create-A-Stunning-README.md?tab=readme-ov-file)
+Documentation inspired by [SagarGaniga](https://github.com/SagarGaniga/How-to-Create-A-Stunning-README.md?tab=readme-ov-file) README.md template
+
+Thanks to [Michał Sajnóg](https://github.com/michalsnik) for providing an opensource library [AOS](https://michalsnik.github.io/aos/) for CSS animations
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
