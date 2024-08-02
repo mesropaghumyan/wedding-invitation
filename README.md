@@ -4,7 +4,9 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-[![c642e164748-1.png](https://i.postimg.cc/d0mSrwfW/c642e164748-1.png)](https://postimg.cc/67q0NJtR)
+<p align="center">
+<img src="https://i.postimg.cc/d0mSrwfW/c642e164748-1.png" alt="mobile model" title="mobile model">
+</p>
 
 ## Requirements  (Prerequisites)
 Tools and packages required to successfully install this project.
